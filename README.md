@@ -2,7 +2,8 @@
 ```markdown
 # AdaCommerce - Sistema de E-Commerce
 
-Sistema completo de e-commerce desenvolvido para Ada Tech com Java 17, Spring Boot 3.5.5 e arquitetura moderna.
+Sistema completo de e-commerce desenvolvido para Ada Tech com Java 17
+Spring Boot 3.5.5 e arquitetura moderna.
 
 ## 🚀 Tecnologias Utilizadas
 
