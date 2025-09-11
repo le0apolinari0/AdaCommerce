@@ -1,11 +1,12 @@
 ```markdown
 # AdaCommerce - Sistema de E-Commerce
 
-Sistema completo de e-commerce desenvolvido para Ada Tech com Java 21, Spring Boot 3.5.5 e arquitetura moderna.
+Sistema completo de e-commerce desenvolvido para Ada Tech com Java 17
+Spring Boot 3.5.5 e arquitetura moderna.
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Java 21** - Linguagem de programação
+- **Java 17** - Linguagem de programação
 - **Spring Boot 3.5.5** - Framework principal
 - **MySQL** - Banco de dados relacional
 - **Flyway** - Controle de migrations
@@ -29,7 +30,7 @@ O sistema segue os princípios SOLID e arquitetura em camadas:
 ## 🔧 Configuração e Execução
 
 ### Pré-requisitos
-- Java 21
+- Java 17
 - Maven 3.6+
 - Docker e Docker Compose
 - MySQL 8.0
@@ -137,13 +138,14 @@ Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para de
 ## 🆘 Suporte
 
 Para dúvidas e suporte:
-- Email: suporte@adacommerce.com
+- Email: leosantosap@outlook.com
+- Contato: 12-988432405
 - Issues: GitHub Issues
 - Documentação: Wiki do projeto
 
 ---
 
-Desenvolvido com ❤️ por Ada Tech
+Desenvolvido para Ada Tech
 ```
 
 ## 📋 Exemplos de Uso da API
