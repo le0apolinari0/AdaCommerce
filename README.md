@@ -1,4 +1,3 @@
-# AdaCommerce - Sistema de E-Commerce
 
 ```markdown
 # AdaCommerce - Sistema de E-Commerce
