@@ -1,0 +1,299 @@
+2025-09-11T00:30:07.763-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : Starting AdaCommerceApplication using Java 21.0.8 with PID 13816 (C:\Ada_Tech\AdaCommerce\target\classes started by Leo in C:\Ada_Tech\AdaCommerce)
+2025-09-11T00:30:07.768-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T00:30:07.965-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-11T00:30:07.967-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-11T00:30:13.037-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-11T00:30:13.507-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 440 ms. Found 4 JPA repository interfaces.
+2025-09-11T00:30:15.710-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-11T00:30:15.742-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T00:30:15.744-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T00:30:15.892-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T00:30:15.893-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7925 ms
+2025-09-11T00:30:17.027-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-11T00:30:18.275-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73a44e45
+2025-09-11T00:30:18.281-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-11T00:30:18.412-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ada_commerce?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-11T00:30:18.682-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table `ada_commerce`.`flyway_schema_history` does not exist yet
+2025-09-11T00:30:18.690-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.080s)
+2025-09-11T00:30:18.691-03:00  WARN 13816 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-09-11T00:30:18.874-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table `ada_commerce`.`flyway_schema_history` ...
+2025-09-11T00:30:19.424-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `ada_commerce`: << Empty Schema >>
+2025-09-11T00:30:19.437-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `ada_commerce` is up to date. No migration necessary.
+2025-09-11T00:30:19.786-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-11T00:30:19.942-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-11T00:30:20.053-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-11T00:30:20.839-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-11T00:30:20.969-03:00  WARN 13816 --- [AdaCommerce] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-11T00:30:21.002-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-11T00:30:23.597-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-11T00:30:24.696-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T00:30:26.251-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-11T00:30:28.109-03:00  WARN 13816 --- [AdaCommerce] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'produtoController' defined in file [C:\Ada_Tech\AdaCommerce\target\classes\br\com\AdaCommerce\controller\ProdutoController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'produtoServiceImpl' defined in file [C:\Ada_Tech\AdaCommerce\target\classes\br\com\AdaCommerce\service\impl\ProdutoServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'openFoodFactsServiceImpl' defined in file [C:\Ada_Tech\AdaCommerce\target\classes\br\com\AdaCommerce\service\impl\OpenFoodFactsServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.web.reactive.function.client.WebClient' available: expected single matching bean but found 2: openFoodFactsWebClient,viaCepWebClient
+2025-09-11T00:30:28.112-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T00:30:28.124-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-11T00:30:28.150-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-11T00:30:28.157-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-09-11T00:30:28.202-03:00  INFO 13816 --- [AdaCommerce] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-11T00:30:28.274-03:00 ERROR 13816 --- [AdaCommerce] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in br.com.AdaCommerce.service.impl.OpenFoodFactsServiceImpl required a single bean, but 2 were found:
+	- openFoodFactsWebClient: defined by method 'openFoodFactsWebClient' in class path resource [br/com/AdaCommerce/config/WebClientConfig.class]
+	- viaCepWebClient: defined by method 'viaCepWebClient' in class path resource [br/com/AdaCommerce/config/WebClientConfig.class]
+
+This may be due to missing parameter name information
+
+Action:
+
+Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+Ensure that your compiler is configured to use the '-parameters' flag.
+You may need to update both your build tool settings as well as your IDE.
+(See https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-6.1-Release-Notes#parameter-name-retention)
+
+
+2025-09-11T00:38:02.420-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : Starting AdaCommerceApplication using Java 21.0.8 with PID 13812 (C:\Ada_Tech\AdaCommerce\target\classes started by Leo in C:\Ada_Tech\AdaCommerce)
+2025-09-11T00:38:02.439-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T00:38:02.624-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-11T00:38:02.625-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-11T00:38:05.270-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-11T00:38:05.647-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 349 ms. Found 4 JPA repository interfaces.
+2025-09-11T00:38:07.416-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-11T00:38:07.451-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T00:38:07.456-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T00:38:07.600-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T00:38:07.601-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4975 ms
+2025-09-11T00:38:08.242-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-11T00:38:09.484-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@20b06ff6
+2025-09-11T00:38:09.488-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-11T00:38:09.632-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ada_commerce?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-11T00:38:09.828-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.098s)
+2025-09-11T00:38:09.839-03:00  WARN 13812 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-09-11T00:38:09.872-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `ada_commerce`: << Empty Schema >>
+2025-09-11T00:38:09.902-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `ada_commerce` is up to date. No migration necessary.
+2025-09-11T00:38:10.659-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-11T00:38:10.748-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-11T00:38:10.809-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-11T00:38:11.258-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-11T00:38:11.360-03:00  WARN 13812 --- [AdaCommerce] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-11T00:38:11.383-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-11T00:38:13.075-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-11T00:38:13.252-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T00:38:14.600-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-11T00:38:16.701-03:00  WARN 13812 --- [AdaCommerce] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-11T00:38:17.194-03:00  WARN 13812 --- [AdaCommerce] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-09-11T00:38:17.734-03:00  WARN 13812 --- [AdaCommerce] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ad539217-bbea-4168-8a4f-f9803631ebcb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-11T00:38:17.750-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-11T00:38:18.109-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T00:38:18.184-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-11T00:38:18.203-03:00  INFO 13812 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : Started AdaCommerceApplication in 16.901 seconds (process running for 18.088)
+2025-09-11T00:39:10.562-03:00  INFO 13812 --- [AdaCommerce] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T00:39:10.562-03:00  INFO 13812 --- [AdaCommerce] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T00:39:10.567-03:00  INFO 13812 --- [AdaCommerce] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-09-11T00:42:23.007-03:00  INFO 13812 --- [AdaCommerce] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T00:42:23.035-03:00  INFO 13812 --- [AdaCommerce] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T00:42:23.227-03:00  INFO 13812 --- [AdaCommerce] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T00:42:23.285-03:00  INFO 13812 --- [AdaCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-11T00:42:23.334-03:00  INFO 13812 --- [AdaCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-11T00:42:45.823-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : Starting AdaCommerceApplication using Java 21.0.8 with PID 13128 (C:\Ada_Tech\AdaCommerce\target\classes started by Leo in C:\Ada_Tech\AdaCommerce)
+2025-09-11T00:42:45.828-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T00:42:46.022-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-11T00:42:46.023-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-11T00:42:48.718-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-11T00:42:49.138-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 400 ms. Found 4 JPA repository interfaces.
+2025-09-11T00:42:50.913-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-11T00:42:50.948-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T00:42:50.949-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T00:42:51.081-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T00:42:51.082-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5057 ms
+2025-09-11T00:42:51.855-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-11T00:42:52.612-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50fd2ddc
+2025-09-11T00:42:52.616-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-11T00:42:52.730-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ada_commerce?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-11T00:42:52.910-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.105s)
+2025-09-11T00:42:52.910-03:00  WARN 13128 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-09-11T00:42:52.943-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `ada_commerce`: << Empty Schema >>
+2025-09-11T00:42:52.957-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `ada_commerce` is up to date. No migration necessary.
+2025-09-11T00:42:53.364-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-11T00:42:53.503-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-11T00:42:53.569-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-11T00:42:54.124-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-11T00:42:54.236-03:00  WARN 13128 --- [AdaCommerce] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-11T00:42:54.255-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-11T00:42:55.919-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-11T00:42:56.098-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T00:42:58.256-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-11T00:43:02.095-03:00  WARN 13128 --- [AdaCommerce] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-11T00:43:02.817-03:00  WARN 13128 --- [AdaCommerce] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-09-11T00:43:03.648-03:00  WARN 13128 --- [AdaCommerce] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0dc27ee4-362b-46a5-a733-f17119b335b2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2025-09-11T00:43:03.672-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-09-11T00:43:04.089-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T00:43:04.155-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-11T00:43:04.171-03:00  INFO 13128 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : Started AdaCommerceApplication in 19.51 seconds (process running for 20.766)
+2025-09-11T00:48:01.918-03:00  INFO 13128 --- [AdaCommerce] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T00:48:01.941-03:00  INFO 13128 --- [AdaCommerce] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T00:48:02.085-03:00  INFO 13128 --- [AdaCommerce] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 143 ms
+2025-09-11T00:52:59.289-03:00  INFO 13128 --- [AdaCommerce] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T00:52:59.332-03:00  INFO 13128 --- [AdaCommerce] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T00:52:59.579-03:00  INFO 13128 --- [AdaCommerce] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T00:52:59.641-03:00  INFO 13128 --- [AdaCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-11T00:52:59.672-03:00  INFO 13128 --- [AdaCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-11T00:56:39.717-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : Starting AdaCommerceApplication using Java 21.0.8 with PID 16292 (C:\Ada_Tech\AdaCommerce\target\classes started by Leo in C:\Ada_Tech\AdaCommerce)
+2025-09-11T00:56:39.724-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T00:56:39.959-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-11T00:56:39.962-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-11T00:56:43.588-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-11T00:56:44.376-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 756 ms. Found 4 JPA repository interfaces.
+2025-09-11T00:56:49.326-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-11T00:56:49.362-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T00:56:49.363-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T00:56:49.641-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T00:56:49.650-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9681 ms
+2025-09-11T00:56:50.793-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-11T00:56:52.176-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c0b7d17
+2025-09-11T00:56:52.181-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-11T00:56:52.353-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ada_commerce?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-11T00:56:52.622-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.089s)
+2025-09-11T00:56:52.623-03:00  WARN 16292 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-09-11T00:56:52.665-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `ada_commerce`: << Empty Schema >>
+2025-09-11T00:56:52.677-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `ada_commerce` is up to date. No migration necessary.
+2025-09-11T00:56:53.349-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-11T00:56:53.515-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-11T00:56:53.632-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-11T00:56:54.443-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-11T00:56:54.619-03:00  WARN 16292 --- [AdaCommerce] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-11T00:56:54.778-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-11T00:56:57.235-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-11T00:56:57.460-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T00:56:59.094-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-11T00:57:01.859-03:00  WARN 16292 --- [AdaCommerce] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-11T00:57:02.330-03:00  WARN 16292 --- [AdaCommerce] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-09-11T00:57:02.645-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T00:57:02.715-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-11T00:57:02.732-03:00  INFO 16292 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : Started AdaCommerceApplication in 25.502 seconds (process running for 28.015)
+2025-09-11T00:57:35.467-03:00  INFO 16292 --- [AdaCommerce] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T00:57:35.468-03:00  INFO 16292 --- [AdaCommerce] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T00:57:35.473-03:00  INFO 16292 --- [AdaCommerce] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-09-11T00:57:35.636-03:00  WARN 16292 --- [AdaCommerce] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource login.]
+2025-09-11T00:57:59.743-03:00  WARN 16292 --- [AdaCommerce] [http-nio-8080-exec-2] ration$PageModule$WarningLoggingModifier : Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-09-11T00:58:39.893-03:00  WARN 16292 --- [AdaCommerce] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-09-11T00:59:40.789-03:00  WARN 16292 --- [AdaCommerce] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-09-11T01:00:57.117-03:00  WARN 16292 --- [AdaCommerce] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/cep.]
+2025-09-11T01:11:49.408-03:00  WARN 16292 --- [AdaCommerce] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/cep.]
+2025-09-11T01:12:54.769-03:00  INFO 16292 --- [AdaCommerce] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T01:12:54.802-03:00  INFO 16292 --- [AdaCommerce] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T01:12:55.043-03:00  INFO 16292 --- [AdaCommerce] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T01:12:55.091-03:00  INFO 16292 --- [AdaCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-11T01:12:55.157-03:00  INFO 16292 --- [AdaCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-11T11:07:14.199-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : Starting AdaCommerceApplication using Java 21.0.8 with PID 6560 (C:\Ada_Tech\AdaCommerce\target\classes started by Leo in C:\Ada_Tech\AdaCommerce)
+2025-09-11T11:07:14.205-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T11:07:14.410-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-11T11:07:14.412-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-11T11:07:26.105-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-11T11:07:27.042-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 838 ms. Found 4 JPA repository interfaces.
+2025-09-11T11:07:30.684-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-11T11:07:30.742-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T11:07:30.744-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T11:07:31.010-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T11:07:31.012-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 16597 ms
+2025-09-11T11:07:32.536-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-11T11:07:34.661-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32f714e
+2025-09-11T11:07:34.667-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-11T11:07:35.010-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] org.flywaydb.core.FlywayExecutor         : Database: jdbc:mysql://localhost:3306/ada_commerce?createDatabaseIfNotExist=true (MySQL 8.0)
+2025-09-11T11:07:35.270-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.118s)
+2025-09-11T11:07:35.272-03:00  WARN 6560 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2025-09-11T11:07:35.326-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema `ada_commerce`: << Empty Schema >>
+2025-09-11T11:07:35.346-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.f.core.internal.command.DbMigrate      : Schema `ada_commerce` is up to date. No migration necessary.
+2025-09-11T11:07:36.452-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-11T11:07:36.688-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-09-11T11:07:36.789-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-11T11:07:37.945-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-11T11:07:38.169-03:00  WARN 6560 --- [AdaCommerce] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-09-11T11:07:38.223-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.35
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-09-11T11:07:42.037-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-11T11:07:42.343-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T11:07:45.379-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-09-11T11:07:50.194-03:00  WARN 6560 --- [AdaCommerce] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-11T11:07:51.105-03:00  WARN 6560 --- [AdaCommerce] [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-09-11T11:07:51.889-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T11:07:52.031-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-11T11:07:52.098-03:00  INFO 6560 --- [AdaCommerce] [restartedMain] b.c.AdaCommerce.AdaCommerceApplication   : Started AdaCommerceApplication in 42.582 seconds (process running for 45.913)
+2025-09-11T11:14:27.773-03:00  INFO 6560 --- [AdaCommerce] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T11:14:27.804-03:00  INFO 6560 --- [AdaCommerce] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T11:14:28.088-03:00  INFO 6560 --- [AdaCommerce] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 278 ms
+2025-09-11T11:14:30.309-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-09-11T11:15:03.129-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource swagger-ui.]
+2025-09-11T11:15:03.311-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T11:28:51.231-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/clientes.]
+2025-09-11T11:29:17.543-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/clientes.]
+2025-09-11T11:30:02.215-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/clientes.]
+2025-09-11T11:30:20.281-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/clientes.]
+2025-09-11T11:30:43.621-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/clientes.]
+2025-09-11T11:34:20.926-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-09-11T11:34:28.163-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.servlet.ServletException: Handler dispatch failed: java.lang.NoSuchMethodError: 'void org.springframework.web.method.ControllerAdviceBean.<init>(java.lang.Object)']
+2025-09-11T11:36:45.108-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [br.com.AdaCommerce.execption.BusinessException: Já existe um cliente com este CPF]
+2025-09-11T11:40:04.762-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [jakarta.validation.ConstraintViolationException: Validation failed for classes [br.com.AdaCommerce.model.Produto] during persist time for groups [jakarta.validation.groups.Default, ]<EOL>List of constraint violations:[<EOL>?ConstraintViolationImpl{interpolatedMessage='não deve ser nulo', propertyPath=nome, rootBeanClass=class br.com.AdaCommerce.model.Produto, messageTemplate='{jakarta.validation.constraints.NotNull.message}'}<EOL>]]
+2025-09-11T11:44:30.598-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [br.com.AdaCommerce.execption.BusinessException: Pedido não encontrado]
+2025-09-11T11:44:50.902-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.orm.jpa.JpaObjectRetrievalFailureException: Unable to find br.com.AdaCommerce.model.Produto with id 6]
+2025-09-11T11:47:59.562-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/pedidos/1/entrega.]
+2025-09-11T11:50:03.448-03:00  WARN 6560 --- [AdaCommerce] [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2025-09-11T12:02:07.803-03:00  INFO 6560 --- [AdaCommerce] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T12:02:07.958-03:00  INFO 6560 --- [AdaCommerce] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T12:02:08.573-03:00  INFO 6560 --- [AdaCommerce] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-11T12:02:08.692-03:00  INFO 6560 --- [AdaCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-11T12:02:08.720-03:00  INFO 6560 --- [AdaCommerce] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
