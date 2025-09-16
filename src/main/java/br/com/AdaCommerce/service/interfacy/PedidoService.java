@@ -14,5 +14,6 @@ public interface PedidoService {
     PedidoResponse finalizarPedido(Long pedidoId);
     PedidoResponse processarPagamento(Long pedidoId);
     PedidoResponse finalizarEntrega(Long pedidoId);
+
 }
 

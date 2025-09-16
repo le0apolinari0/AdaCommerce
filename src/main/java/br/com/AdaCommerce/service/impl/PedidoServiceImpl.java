@@ -6,24 +6,33 @@ import br.com.AdaCommerce.execption.BusinessException;
 import br.com.AdaCommerce.mapper.PedidoMapper;
 import br.com.AdaCommerce.model.*;
 import br.com.AdaCommerce.repository.PedidoRepository;
+import br.com.AdaCommerce.service.interfacy.EmailService;
 import br.com.AdaCommerce.service.interfacy.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class PedidoServiceImpl implements PedidoService {
 
     private final PedidoRepository pedidoRepository;
     private final PedidoMapper pedidoMapper;
+    private final EmailService emailService;
 
     @Autowired
-    public PedidoServiceImpl(PedidoRepository pedidoRepository, PedidoMapper pedidoMapper) {
+    public PedidoServiceImpl(PedidoRepository pedidoRepository,
+     PedidoMapper pedidoMapper,
+     EmailService emailService
+    ) {
         this.pedidoRepository = pedidoRepository;
         this.pedidoMapper = pedidoMapper;
+        this.emailService = emailService;
     }
+
 
     @Override
     @Transactional
@@ -125,12 +134,18 @@ public class PedidoServiceImpl implements PedidoService {
 
         pedido.setStatus(StatusPedido.AGUARDANDO_PAGAMENTO);
         pedido.setStatusPagamento(StatusPagamento.AGUARDANDO_PAGAMENTO);
-
-        // Notificar cliente via e-mail (implementação simplificada)
-        notificarCliente(pedido.getCliente(), "Pedido aguardando pagamento");
-
         pedido = pedidoRepository.save(pedido);
+
+        Map<String, Object> noticicacao = new HashMap<>();
+        noticicacao.put("cliente", pedido.getCliente());
+        noticicacao.put("pedido", pedido);
+        notificarCliente(pedido.getCliente(),
+                "Pedido #" + pedido.getId() + " Aguardando Pagamento",
+                "pedido-aguardando-pagamento",
+                noticicacao);
+
         return pedidoMapper.toResponse(pedido);
+
     }
 
     @Override
@@ -144,12 +159,16 @@ public class PedidoServiceImpl implements PedidoService {
             throw new BusinessException("Pedido não está aguardando pagamento");
         }
 
+
+
         pedido.setStatusPagamento(StatusPagamento.PAGO);
-
-        // Notificar cliente via e-mail (implementação simplificada)
-        notificarCliente(pedido.getCliente(), "Pagamento confirmado");
-
         pedido = pedidoRepository.save(pedido);
+        Map<String, Object> noticicacao = new HashMap<>();
+        notificarCliente(pedido.getCliente(),
+                "Pagamento Confirmado - Pedido #" + pedido.getId(),
+                "pagamento-confirmado",
+                noticicacao);
+
         return pedidoMapper.toResponse(pedido);
     }
 
@@ -164,17 +183,34 @@ public class PedidoServiceImpl implements PedidoService {
         }
 
         pedido.setStatus(StatusPedido.FINALIZADO);
-
-        // Notificar cliente via e-mail (implementação simplificada)
-        notificarCliente(pedido.getCliente(), "Pedido entregue");
-
         pedido = pedidoRepository.save(pedido);
+        Map<String, Object> noticicacao = new HashMap<>();
+        notificarCliente(pedido.getCliente(),
+                "Pedido #" + pedido.getId() + " Entregue",
+                "pedido-entregue",
+                noticicacao);
+
         return pedidoMapper.toResponse(pedido);
     }
 
-    private void notificarCliente(Cliente cliente, String mensagem) {
-        // Implementação simplificada de notificação
-        System.out.println("Notificando cliente " + cliente.getEmail() + ": " + mensagem);
+    private void notificarCliente(
+            Cliente cliente,
+            String assunto,
+            String templateName,
+            Map<String, Object> variaveis
+    ) {
+        try {
+            emailService.enviarEmailTemplate(
+                    cliente.getEmail(),
+                    assunto,
+                    templateName,
+                    variaveis
+            );
+        } catch (Exception e) {
+            // Logar erro mas não falhar a operação principal
+            System.err.println("Erro ao enviar e-mail: " + e.getMessage());
+        }
     }
+
 }
 

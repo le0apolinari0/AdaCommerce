@@ -6,6 +6,7 @@ import br.com.AdaCommerce.mapper.EnderecoMapper;
 import br.com.AdaCommerce.model.Endereco;
 import br.com.AdaCommerce.service.interfacy.ViaCepService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +14,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 @RestController
 @RequestMapping("/api/cep")
-@Tag(name = "Ada Commerce", description = "API para gerenciamento  CEP Ada Commerce")
+@Tag(name = "CEP", description = "Consulta de endereços via API ViaCEP")
 public class CepController {
 
     private final ViaCepService viaCepService;
@@ -29,7 +29,10 @@ public class CepController {
     }
 
     @GetMapping("/{cep}")
-    @Operation(summary = "Consultar Endereço por CEP")
+    @Operation(
+            summary = "Consultar endereço por CEP",
+            description = "Retorna as informações do endereço correspondente ao CEP informado"
+    )
     public ResponseEntity<ApiResponse<EnderecoResponse>> buscarPorCep(@PathVariable String cep) {
         try {
             Endereco endereco = viaCepService.buscarEnderecoPorCep(cep);
@@ -41,4 +44,3 @@ public class CepController {
         }
     }
 }
-
